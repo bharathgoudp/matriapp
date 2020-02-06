@@ -1,0 +1,936 @@
+   {% extends 'headfooter.html' %}
+		{% block content %}
+        {% load static %}
+        {% load crispy_forms_tags %}
+{% comment %} <html class="no-js" lang="zxx">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
+
+    <title>Crazy Mar - Job Portal</title>
+
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">
+    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/plugins/nice-select/css/nice-select.css">
+    <link href="assets/plugins/animate/animate.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
+    
+    <link href="assets/plugins/slick-slider/slick.css" rel="stylesheet">	
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet">
+    <link href="assets/css/skin/default.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	
+    
+    <style>
+        body, section {
+    background: #f1f1f1;
+}
+    </style>
+	</head>
+	
+	<body>
+		
+        <header class="main_header">
+				<span class="hoe-sidebar-toggle"><a href="#"></a></span>
+				<div class="cm_left_header">
+					<a href="index.html"><span>Crazy Mar</span></a>
+				</div>
+				<div class="nav_main">
+					<ul class="left-navbar">
+						<li>
+							<form method="post" class="search_bar">
+								<input type="text" placeholder="Search videos, movies, and more" name="keyword" class="form-control">
+								<span class="search-icon"><i class="fa fa-search"></i></span>
+							</form>
+						</li>
+					</ul>
+					<ul class="right-navbar">
+                        <li class="upload_video">
+                            <a href="upload.html"><img src="img/upload.png"></a>
+                        </li>
+						<li>
+							<a class="login" href="#"><img src="img/user.png"> Sign in</a>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle icon-circle" data-toggle="dropdown" >
+							<i class="fa fa-bell-o"></i>
+							<span class="badge badge-success">6</span>
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<h3><span class="bold">Notification</span></h3>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Database overload- Sav3090</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Installing App v1.2.1</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Error - Sav3085</span>
+									<span class="notification-ago  ">10 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status - Sav3080</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Configured</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li> 
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span><img class="img-circle user_img" src="img/avatar-1.jpg"></span>
+								<!--<span><b>Laxman Lucky</b> <i class=" fa fa-angle-down"></i></span>-->
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<div class="profile-box">
+										<div class="media">
+											<a class="pull-left" href="user-profile.html">
+											<img class="img-circle" src="img/avatar-1.jpg">
+											</a>
+											<div class="media-body">
+												<h5 class="media-heading">Welcome <span>Lucky</span></h5>
+												<small>UI Developer</small>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+								<li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+								<li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>
+								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header> {% endcomment %}
+        
+        
+      
+                
+				<section>
+                            
+                        
+                            <section class="list_jobs">
+                                <div class="container">
+                                    
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10">
+                                            
+                                        <div class="box">
+
+
+                                    {% crispy form %}
+
+
+						{% comment %} <div class="box-header">
+							<h4><img src="{% static 'img/icons/01.png' %}">&nbsp;&nbsp;Basic Details</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+							
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Full Name</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Create Profile for</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                <option data-display="Select">Select</option>
+                                                <option value="Self">Self</option>
+                                                <option value="Son">Son</option>
+                                                <option value="Daughter">Daughter</option>
+                                                <option value="Brother">Brother</option>
+                                                <option value="Sister">Sister</option>
+                                                <option value="Friend">Friend</option>
+                                                <option value="Relative">Relative</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                               
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Gender</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                <option data-display="Select">Select</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                   
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Mother Tongue</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                <option data-display="Select">Select</option>
+                                                <option value="Telugu">Telugu</option>
+                                                <option value="English">English</option>
+                                                <option value="Hindi">Hindi</option>
+                                                <option value="others">others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Mobile</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" placeholder="Enter Number">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                
+							
+							</div>
+						</div>
+					</div>
+                                        </div>
+                                        
+                                        
+					
+					   <div class="box">
+						<div class="box-header">
+							<h4><img src="{% static 'img/icons/01.png' %}">&nbsp;&nbsp;Religion Details</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+							
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Caste</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                <option data-display="Select Caste">Select Caste</option>
+                                               {% for x in cste %}
+                                                  <option value="{{x.id}}">{{x.cst}}</option> 
+                                                  {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                           
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p><span><span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span></span>Willing to marry from other communities also</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Subcaste</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                {% for x in sbcste %}
+                                                <option value="{{x.id}}">{{x.subcst}}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <div class="row"> -->
+                                        <!-- <div class="col-md-2"> -->
+                                            <!-- <label>Subcaste</label> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="col-sm-6"> -->
+                                            <!-- <select class="wide form-control"> -->
+                                                <!-- <option data-display="Select Caste">Gothra(m)</option> -->
+                                                <!-- <option value="1">Hardware</option> -->
+                                                <!-- <option value="2">Machanical</option> -->
+                                            <!-- </select> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Dosham</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Yes
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">No
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Don't know
+                                            </label>
+                                          </form>   
+                                        </div>
+                                    
+                                </div>
+                                
+							
+							</div>
+						</div>
+					</div>
+                                        </div>
+                                        
+                                        <div class="box">
+						<div class="box-header">
+							<h4><img src="{% static 'img/icons/02.png' %}">&nbsp;&nbsp;Personal Details</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+							
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Marital Status</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Never Married
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Widowed
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Divorced
+                                                </label>
+                                                
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Awaiting divorce
+                                                </label>
+                                            </form>   
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Number of Children</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">None
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">1
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">2
+                                                </label>
+                                                
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">3
+                                                </label>
+                                                
+                                                 <label class="radio-inline">
+                                                  <input type="radio" name="optradio">4 and above
+                                                </label>
+                                            </form>   
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Height</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="wide form-control">
+                                                <option data-display="Select Caste">Select Height</option>
+                                              {% for x in heigt %}
+                                              <option value="{{x.id}}">{{x.hgt}}</option>
+                                              {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                 
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Family Status</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Middle class
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Upper middle class
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Rich
+                                                </label>
+                                                
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Affluent
+                                                </label>
+                                              
+                                            </form>   
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Family Type</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Joint
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Nuclear
+                                                </label>
+                                             
+                                              
+                                            </form>   
+                                        </div>
+                                    </div>
+							 
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Family Values</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Orthodox
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Traditional
+                                                </label>
+                                             
+                                              <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Moderate
+                                                </label>
+                                             
+                                              
+                                              <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Liberal
+                                                </label>
+                                             
+                                              
+                                            </form>   
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Any Disability</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <form style="font-weight: 300;color: #000;">
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Normal
+                                                </label>
+                                                <label class="radio-inline">
+                                                  <input type="radio" name="optradio">Physically challenged
+                                                </label>
+                                             
+                                            </form>   
+                                        </div>
+                                    </div>
+							
+							</div>
+						</div>
+					</div>
+                                        </div>
+                                        
+				<div class="box">
+						<div class="box-header">
+							<h4><img src="{% static 'img/icons/03.png' %}">&nbsp;&nbsp;Professional Details</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+							
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Highest Education</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                <option data-display="Select Education">Select Education</option>
+                                                <option value="P.hd">P.hd</option>
+                                                <option value="MBA">MBA</option>
+                                                <option value="M-Tech">M-Tech</option>
+                                                <option value="PG">PG</option>
+                                                <option value="B-Tech">B-Tech</option>
+                                                <option value="Degree">Degree</option>
+                                                <option value="MBBS">MBBS</option>
+                                                <option value="Inter">Inter</option>
+                                                <option value="Diploma">Diploma</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                 
+                                    {% comment %} <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Employed In</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <form style="font-weight: 300;color: #000;">
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Government
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Private
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Business
+                                            </label>
+                                                
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Defence
+                                            </label>    
+                                            <label class="radio-inline">
+                                              <input type="radio" name="optradio">Self Employed
+                                            </label><label class="radio-inline">
+                                              <input type="radio" name="optradio">Not working
+                                            </label>
+                                          </form>   
+                                        </div>
+                                    
+                                </div> 
+                                    
+                                    
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Occupation</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="wide form-control">
+                                                <option data-display="Select Occupation">Select Occupation</option>
+                                                <option value="Farmer">Farmer</option>
+                                                <option value="Govt.employee">Govt.employee</option>
+                                                <option value="private.employee">private.employee</option>
+                                                <option value="Business Man">Business Man</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                
+							
+							</div>
+						</div>
+					</div>
+                                        </div>
+                                        
+                                        
+                                       
+					
+					
+                                                
+                                                <div class="phoneModal-popup">
+        <div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog otp_modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="store-find-block">
+                                <div class="mydivs">
+                                    
+                            <div class="code-varifications">
+                                <div class="store-find">
+                                    <div class="store-head">
+                                    <button name="prev" class="btn-link">Back</button>
+                                     
+                                        <h4>Code Verifcation</h4>
+                                        <h5>Enter your code in below area.</h5>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="store-form">
+                                        <form>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <label class="col-md-12 control-label sr-only" for="Phone">Phone</label>
+                                                    <div class="col-md-3 nopr">
+                                                        <input id="number" name="number" type="text" placeholder="0" class="form-control input-md" required="">
+                                                    </div>
+                                                    <div class="col-md-3 nopr">
+                                                        <input id="number" name="number" type="text" placeholder="0" class="form-control input-md" required="">
+                                                    </div>
+                                                    <div class="col-md-3 nopr">
+                                                        <input id="number" name="number" type="text" placeholder="0" class="form-control input-md" required="">
+                                                    </div>
+                                                    <div class="col-md-3 ">
+                                                        <input id="number" name="number" type="text" placeholder="0" class="form-control input-md" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label sr-only" for="next">next</label>
+                                                    <div class="col-md-12">
+                                                        <button id="next" name="next" class="btn next_otp">Confirm</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="success-message">
+                                <div class="store-find">
+                                    <div class="store-form">
+                                        <div class="success-sign"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
+                                        <h4>Successful Verification</h4>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+					 {% endcomment %}
+                    		{% comment %} <div class="text-center">
+                        <button  type="submit" class="btn btn-m theme-btn sumnit_btn skip"> Next Page  </button>
+                        <button type="Reset" class="btn btn-m theme-btn sumnit_btn">Reset</button>
+					</div>
+					
+				</form> {% endcomment %}
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+
+                                   
+
+                                </div>
+                            </section>
+                {% endblock %}           
+                            
+		{% comment %} <footer class="dark-bg footer">
+			<div class="">
+				
+				<!-- Row Start -->
+				<div class="row">
+				
+					<div class="col-md-12 col-sm-12">
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+                            
+                            <div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+			</div>
+		</footer>
+		
+		<!-- Apply Job Popup -->
+		<div class="modal fade" id="apply-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel2">
+					<div class="modal-body">
+						<div class="text-center">
+							<h4 class="mrg-0">Front End Designer</h4>
+							<span> 2708 Scenic Way, Sutter</span>
+						</div>
+						
+						<form>
+
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" class="form-control" placeholder="Email">
+							</div>
+					
+
+							<div class="form-group">
+								<label>Phone</label>
+								<input type="text" class="form-control" placeholder="Phone">
+							</div>
+
+							<div class="form-group">
+								<label>Upload CV</label>
+								<div class="custom-file-upload">
+									<input type="file" id="file" name="myfiles[]" multiple />
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<textarea class="form-control height-120" placeholder="Pase CV"></textarea>
+							</div>
+
+							<div class="form-group text-center">
+								<button type="button" class="btn theme-btn btn-m">Save & Apply</button>
+							</div>
+							
+						</form>
+							
+					</div>
+				</div>
+			</div>
+		</div>   
+		<!-- Apply Job Popup -->
+		
+		<!-- Sign Up Window Code -->
+		<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel1">
+					<div class="modal-body">
+						<div class="text-center"><img src="assets/img/logo.png" class="img-responsive" alt=""></div>
+						
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs nav-advance theme-bg" role="tablist">
+							<li class="nav-item active">
+								<a class="nav-link" data-toggle="tab" href="#employer" role="tab">
+								<i class="ti-user"></i> Employer</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#candidate" role="tab">
+								<i class="ti-user"></i> Candidate</a>
+							</li>
+						</ul>
+						<!-- Nav tabs -->
+							
+						<!-- Tab panels -->
+						<div class="tab-content">
+						
+							<!-- Employer Panel 1-->
+							<div class="tab-pane fade in show active" id="employer" role="tabpanel">
+								<form>
+									
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control" placeholder="User Name">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control" placeholder="*********">
+									</div>
+									
+									<div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="4">
+											<label for="4"></label>Remember me
+										</span>
+										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+									</div>
+									
+								</form>
+								
+								<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>
+					
+							</div>
+							<!--/.Panel 1-->
+							
+							<!-- Candidate Panel 2-->
+							<div class="tab-pane fade" id="candidate" role="tabpanel">
+								<form>
+									
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control" placeholder="User Name">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control" placeholder="*********">
+									</div>
+									
+									<div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="44">
+											<label for="44"></label>Remember me
+										</span>
+										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+									</div>
+									
+								</form>
+								
+								<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>
+								
+							</div>
+							<!--/.Panel 2-->
+							
+						</div>
+						<!-- Tab panels -->
+					</div>
+				</div>
+			</div>
+		</div>   
+    
+				</section>  
+        
+		
+		 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
+		<script src="assets/js/viewportchecker.js"></script>
+		<script src="assets/plugins/slick-slider/slick.js"></script>
+		<script src="assets/plugins/bootstrap/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>
+		
+		<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/main.js"></script>
+        
+		<script language="javascript" type="text/javascript">
+			 if($('#search_for_more').height()>235){
+
+					$("#search_for_more .search_detail").css({'height':235+"px", 'overflow':'auto'});
+			  }
+            
+            
+            $(document).ready(function() {
+        var divs = $('.mydivs>div');
+        var now = 0; // currently shown div
+        divs.hide().first().show();
+        $("button[name=next]").click(function(e) {
+            divs.eq(now).hide();
+            now = (now + 1 < divs.length) ? now + 1 : 0;
+            divs.eq(now).show(); // show next
+        });
+        $("button[name=prev]").click(function(e) {
+            divs.eq(now).hide();
+            now = (now > 0) ? now - 1 : divs.length - 1;
+            divs.eq(now).show(); // or .css('display','block');
+            //console.log(divs.length, now);
+        });
+    });
+			</script>
+    </body>
+
+</html> {% endcomment %}
+ 

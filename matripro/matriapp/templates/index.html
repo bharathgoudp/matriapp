@@ -1,0 +1,1118 @@
+{% extends 'headfooter.html' %}
+		{% block content %}
+		{% load static %}
+
+{% comment %} <html class="no-js" lang="zxx">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
+
+    <title>Crazy Mar - Job Portal</title>
+
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">
+    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/plugins/nice-select/css/nice-select.css">
+    <link href="assets/plugins/animate/animate.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
+    
+    <link href="assets/plugins/slick-slider/slick.css" rel="stylesheet">	
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet">
+    <link href="assets/css/skin/default.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	
+    
+    <style>
+        body, section {
+    background: #f1f1f1;
+}
+    </style>
+	</head>
+	
+	<body>
+		
+        <header class="main_header">
+				<span class="hoe-sidebar-toggle"><a href="#"></a></span>
+				<div class="cm_left_header">
+					<a href="index.html"><span>Crazy Mar</span></a>
+				</div>
+				<div class="nav_main">
+					<ul class="left-navbar">
+						<li>
+							<form method="post" class="search_bar">
+								<input type="text" placeholder="Search videos, movies, and more" name="keyword" class="form-control">
+								<span class="search-icon"><i class="fa fa-search"></i></span>
+							</form>
+						</li>
+					</ul>
+					<ul class="right-navbar">
+                        <li class="upload_video">
+                            <a href="upload.html"><img src="img/upload.png"></a>
+                        </li>
+						<li>
+							<a data-toggle="modal" data-target="#signin" class="login" href="#"><img src="img/user.png"> Sign in</a>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle icon-circle" data-toggle="dropdown" >
+							<i class="fa fa-bell-o"></i>
+							<span class="badge badge-success">6</span>
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<h3><span class="bold">Notification</span></h3>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Database overload- Sav3090</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Installing App v1.2.1</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Error - Sav3085</span>
+									<span class="notification-ago  ">10 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status - Sav3080</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Configured</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li> 
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span><img class="img-circle user_img" src="img/avatar-1.jpg"></span>
+								<!--<span><b>Laxman Lucky</b> <i class=" fa fa-angle-down"></i></span>-->
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<div class="profile-box">
+										<div class="media">
+											<a class="pull-left" href="user-profile.html">
+											<img class="img-circle" src="img/avatar-1.jpg">
+											</a>
+											<div class="media-body">
+												<h5 class="media-heading">Welcome <span>Lucky</span></h5>
+												<small>UI Developer</small>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+								<li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+								<li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>
+								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header> {% endcomment %}
+        
+        
+        
+                
+                
+                
+				<section>
+                            
+                            
+                            
+                            <div class="main-banner" style="background-image:url({% static 'img/banner_home.jpg' %});">
+			<div class="container">
+                <div class="row">
+				<div class="col-md-12 col-sm-12">
+                    
+                    
+                  
+				    
+					<form>
+						<fieldset class="home-form-1 icon-field">
+						
+							<div style="padding-right: 10px;" class="col-md-2 col-sm-2">
+								<div class="form-group">
+									<div class="icon-addon addon-lg">
+                                         <label>I'm looking for a</label>
+										<select class="wide form-control">
+											<option value="1">Woman</option>
+                                            <option value="1">Men</option>
+										</select>
+									</div>
+								</div>
+							</div>
+                            
+                            <div style="padding-left: 10px;padding-right: 10px;" class="col-md-3 col-sm-3">
+								<div class="form-group">
+                                    <label>Age</label>
+                                    
+                                    <div class="row">
+                                        <div id="style-3" style="padding-right: 0;" class="col-md-5 icon-addon addon-lg">
+                                            <select class="wide form-control">
+                                                <option value="1">18</option>
+                                                <option value="1">19</option>
+                                                <option value="1">20</option>
+                                                <option value="1">21</option>
+                                                <option value="1">22</option>
+                                                <option value="1">23</option>
+                                                <option value="1">24</option>
+                                                <option value="1">25</option>
+                                                <option value="1">26</option>
+                                                <option value="1">27</option>
+                                            </select>
+                                        </div>
+                                        <div style="padding: 0;text-align: center;" class="col-md-2 icon-addon addon-lg">
+                                            <span style="display: block;margin-top: 10px;color: #fff;font-size: 16px;text-align: center;width: 100%;">to</span>
+                                        </div>
+                                        <div style="padding-left: 0;" class="col-md-5 icon-addon addon-lg">
+                                            <select class="wide form-control">
+                                                <option value="1">25</option>
+                                                <option value="1">26</option>
+                                                <option value="1">27</option>
+                                                <option value="1">28</option>
+                                                <option value="1">29</option>
+                                                <option value="1">30</option>
+                                                <option value="1">31</option>
+                                                <option value="1">32</option>
+                                                <option value="1">33</option>
+                                                <option value="1">34</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+									
+								</div>
+							</div>
+								
+							<div style="padding-left: 10px;padding-right: 10px;" class="col-md-2 col-sm-2">
+								<div class="form-group">
+									<div class="icon-addon addon-lg">
+                                         <label>Religion</label>
+										<select class="wide form-control">
+											<option value="1">Hindu</option>
+                                            <option value="1">Muslim</option>
+                                            <option value="1">Christian</option>
+                                            <option value="1">Sikh</option>
+                                            <option value="1">Parsi</option>
+                                            <option value="1">Jain</option>
+                                            <option value="1">Buddhist</option>
+                                            <option value="1">Jewish</option>
+                                            <option value="1">No Religion</option>
+                                            <option value="1">Spiritual</option>
+                                            <option value="1">Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div style="padding-right: 10px;" class="col-md-3 col-sm-3">
+								<div class="form-group">
+									<div class="icon-addon addon-lg">
+                                         <label>Mother tongue</label>
+										<select class="wide form-control">
+											<option value="1">Hindu</option>
+                                            <option value="1">Muslim</option>
+                                            <option value="1">Christian</option>
+                                            <option value="1">Sikh</option>
+                                            <option value="1">Parsi</option>
+                                            <option value="1">Jain</option>
+                                            <option value="1">Buddhist</option>
+                                            <option value="1">Jewish</option>
+                                            <option value="1">No Religion</option>
+                                            <option value="1">Spiritual</option>
+                                            <option value="1">Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+								
+							<div style="padding-left: 10px;" class="col-md-2 col-sm-2 ">
+								<a href="{% url 'myhome' %}" style="margin-top: 28px;" type="submit" class="btn theme-btn cl-white seub-btn">Let's Begin</a>
+							</div>
+								
+						</fieldset>
+					</form>
+					
+					
+					
+				</div>
+                </div>
+			</div>
+		</div>
+		<!-- ======================= End Banner ===================== -->
+		
+		<!-- ====================== Advance Features ================= -->
+                            
+                            
+         
+                            
+                            <section class="why_choose_us">
+			<div class="container">
+				
+				<div class="row aos-init aos-animate" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h2>Find your Special Someone</h2>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-md-4 col-sm-4">
+						<div class="work-process step-2">
+							<span class="process-icon">
+								<i class="fa"><img src="{% static 'img/user1.png' %}"></i>
+								<span class="process-count cl-white">1</span>
+							</span>
+							<h4>Sign up</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+                        
+					</div>
+					
+					<div class="col-md-4 col-sm-4">
+						
+                        <div class="work-process">
+							<span class="process-icon">
+								<i class="fa"><img style="width: 50px;" src=" {% static 'img/user2.png' %}"></i>
+								<span class="process-count cl-white">2</span>
+							</span>
+							<h4>Connect</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-4">
+						<div class="work-process step-3">
+							<span class="process-icon">
+								<i class="fa"><img style="width: 50px;" src="{% static 'img/user3.png' %}"></i>
+								<span class="process-count cl-white">3</span>
+							</span>
+							<h4>Interact</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+                            
+                            
+                            
+		<section class="catehpru_choose trending_indur">
+            
+            
+			<div class="matcjing_sitses">
+                
+                <div class="container">
+				
+				<div class="row" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h2>Trending Industries</h2>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4 w3-browse-grid">
+				<h4>By Mother Tongue</h4>
+                        
+                <ul>
+                    <li><a href="#">Bengali</a></li>
+                    <li><a href="#">Gujarati</a></li>
+                    <li><a href="#">Hindi</a></li>
+                    <li><a href="#">Marwari</a></li>
+                    <li><a href="#">Kannada</a></li>
+                    <li><a href="#">Punjabi</a></li>
+                    <li><a href="#">Marathi</a></li>
+                    <li><a href="#">Sindhi</a></li>
+                    <li><a href="#">Malayalam</a></li>
+                    <li><a href="#">Odia</a></li>
+                    <li><a href="#">Tamil</a></li>
+                    <li><a href="#">Telugu</a></li>
+                </ul>
+                        
+                        
+                    <div style="text-align: center;" class="col-md-12">
+                        <a href="#" class="btn btn-hiring btn-m mrg-5 cust_btn">More Matrimonials</a>
+                    </div>  
+			</div>
+                    <div class="col-md-4 w3-browse-grid">
+				<h4>By Religion</h4>
+				<ul>
+					<li><a href="#">Hindu</a></li>
+					<li><a href="#">Muslim</a></li>
+					<li><a href="#">Sikh</a></li>
+					<li><a href="#">Christian</a></li>
+					<li><a href="#">Jain</a></li>
+					<li><a href="#">Buddhist</a></li>
+					<li><a href="#">Jewish</a></li>
+					<li><a href="#">Parsi</a></li>
+					<li><a href="#">Catholic</a></li>
+					<li><a href="#">Islamic</a></li>
+					
+				</ul>
+                    <div style="text-align: center;" class="col-md-12">
+                        <a href="#" class="btn btn-hiring btn-m mrg-5 cust_btn">More Matrimonials</a>
+                    </div>  
+			</div>
+                    <div class="col-md-4 w3-browse-grid">
+				<h4>By Community</h4>
+				<ul>
+					<li><a href="#">Country 1</a></li>
+					<li><a href="#">Country 2</a></li>
+					<li><a href="#">Country 3</a></li>
+					<li><a href="#">Country 4</a></li>
+					<li><a href="#">Country 5</a></li>
+					<li><a href="#">Country 6</a></li>
+					<li><a href="#">Country 7</a></li>
+					<li><a href="#">Country 8</a></li>
+					<li><a href="#">Country 9</a></li>
+					<li><a href="#">Country 10</a></li>
+					<li><a href="#">Country 11</a></li>
+				</ul>
+                    <div style="text-align: center;" class="col-md-12">
+                        <a href="#" class="btn btn-hiring btn-m mrg-5 cust_btn">More Matrimonials</a>
+                    </div>  
+			</div>
+              
+				</div>
+				
+                </div></div>
+		</section>
+        {% endblock %}                    
+                            
+                       
+    <!--<section class="catehpru_choose trending_indur">
+            
+            
+			<div class="">
+				
+				<div class="" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h2>Search by Popular Matchmaking Sites</h2>
+						</div>
+					</div>
+				</div>
+				
+				<div class="">
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								<img src="img/trending1.jpg" class="img-responsive" alt="" />
+							</div>
+							
+							<div class="blog-grid-box-content">
+								
+								<h4>BPO</h4>
+								
+                                <ul class="rend_indlist">
+                                    <li><a href="browse_employer.html">BPO executive</a></li>
+                                    <li><a href="browse_employer.html">Sales</a></li>
+                                    <li><a href="browse_employer.html">Data entry</a></li>
+                                    <li><a href="browse_employer.html">Customer support</a></li>
+                                </ul>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								<img src="img/trending2.jpg" class="img-responsive" alt="" />
+							</div>
+							
+							<div class="blog-grid-box-content">
+								
+								<h4>LOGISTICS</h4>
+								
+                                <ul class="rend_indlist">
+                                    <li><a href="browse_employer.html">Delivery boy</a></li>
+                                    <li><a href="browse_employer.html">Driver</a></li>
+                                    <li><a href="browse_employer.html">Warehouse executive</a></li>
+                                    <li><a href="browse_employer.html">Ground staff</a></li>
+                                </ul>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								<img src="img/trending3.jpg" class="img-responsive" alt="" />
+							</div>
+							
+							<div class="blog-grid-box-content">
+								
+								<h4>HEALTH</h4>
+								
+                                <ul class="rend_indlist">
+                                    <li><a href="browse_employer.html">Doctors</a></li>
+                                    <li><a href="browse_employer.html">Nurses</a></li>
+                                    <li><a href="browse_employer.html">Ward boy</a></li>
+                                    <li><a href="browse_employer.html">Lab assistant</a></li>
+                                </ul>
+							</div>
+							
+						</div>
+					</div>
+                    
+                    <div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								<img src="img/trending4.jpg" class="img-responsive" alt="" />
+							</div>
+							
+							<div class="blog-grid-box-content">
+								
+								<h4>HOSPITALITY</h4>
+								
+                                <ul class="rend_indlist">
+                                    <li><a href="browse_employer.html">Hospitality executive</a></li>
+                                    <li><a href="browse_employer.html">Housekeeping</a></li>
+                                    <li><a href="browse_employer.html">Cook</a></li>
+                                    <li><a href="browse_employer.html">Steward</a></li>
+                                </ul>
+							</div>
+							
+						</div>
+					</div>
+                    
+                    <div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								<img src="img/trending5.jpg" class="img-responsive" alt="" />
+							</div>
+							
+							<div class="blog-grid-box-content">
+								
+								<h4>FACILITY MANAGEMENT</h4>
+								
+                                <ul class="rend_indlist">
+                                    <li><a href="browse_employer.html">Electrician</a></li>
+                                    <li><a href="browse_employer.html">Mechanic</a></li>
+                                    <li><a href="browse_employer.html">Plumber</a></li>
+                                    <li><a href="browse_employer.html">Warehouse executive</a></li>
+                                </ul>
+							</div>
+							
+						</div>
+					</div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								<img src="img/trending6.jpg" class="img-responsive" alt="" />
+							</div>
+							
+							<div class="blog-grid-box-content">
+								
+								<h4>FINANCIAL SERVICES</h4>
+								
+                                <ul class="rend_indlist">
+                                    <li><a href="browse_employer.html">Accountant</a></li>
+                                    <li><a href="browse_employer.html">Cashier</a></li>
+                                    <li><a href="browse_employer.html">Financial Advisor</a></li>
+                                    <li><a href="browse_employer.html">Insurance Consultants</a></li>
+                                </ul>
+							</div>
+							
+						</div>
+					</div>
+                    
+                    <div style="text-align: center;" class="col-md-12">
+                        <a href="#" class="btn btn-hiring btn-m mrg-5 cust_btn">Browse all roles</a>
+                    </div>  
+                    
+				</div>
+				
+			</div>
+		</section>-->
+                            
+		
+		<!-- ================= Employer & Candidate Register Area ========================= -->
+		<!--<section class="padd-0">
+			<div class="container-fluid padd-0">
+			
+				<div class="col-md-6 col-sm-6 padd-0">
+					<div class="half-box employer-box text-center" style="background-image:url(assets/img/employer.jpg);">
+						<h2>Join With Job Hill</h2>
+						<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque.</p>
+						<a href="#" class="btn theme-btn btn-radius btn-m">Create Account</a>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-sm-6 padd-0">
+					<div class="half-box candidate-box text-center" style="background-image:url(assets/img/candidate.jpg);">
+						<h2>Join With Job Hill</h2>
+						<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque.</p>
+						<a href="#" class="btn light-btn btn-radius btn-m">Create Account</a>
+					</div>
+				</div>
+				
+			</div>
+		</section>-->
+		<!-- ================= Employer & Candidate Register Area ========================= -->
+		
+		<!-- ======================= All Jobs ==================================== -->
+		<!--<section>
+			<div class="">
+				<div class="table-responsive"> 
+					<table class="table table-lg table-hover">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Location</th>
+								<th>Job Type</th>
+								<th>Sallery</th>
+								<th>Apply</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-1.png" class="avatar-lg" alt="Avatar">Software Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="full-type">Full Time</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-2.png" class="avatar-lg" alt="Avatar">CMS Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="internship-type">Internship</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-3.png" class="avatar-lg" alt="Avatar">Software Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="part-type">Part Time</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-4.png" class="avatar-lg" alt="Avatar">PHP Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="full-type">Full Time</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td> 
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-5.png" class="avatar-lg" alt="Avatar">Software Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="internship-type">Internship</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-6.png" class="avatar-lg" alt="Avatar">PHP Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="full-type">Full Time</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-7.png" class="avatar-lg" alt="Avatar">CMS Development</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="part-type">Part Time</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>  
+							</tr>
+							
+							<tr>
+								<td><a href="job-detail.html"><img src="assets/img/c-8.png" class="avatar-lg" alt="Avatar">Frond End Designer</a></td>
+								<td><i class="ti-location-pin"></i> 2708 Scenic Way, Sutter</td>
+								<td><div class="full-type">Full Time</div></td>                
+								<td><i class="ti-credit-card"></i> $530 - 697</td>
+								<td>
+									<a href="#" data-toggle="modal" data-target="#apply-job" class="apply-job-btn btn btn-radius theme-btn">Apply</a>
+								</td>  
+							</tr>
+							
+						</tbody>
+					</table>
+					
+					<div class="flexbox padd-10">
+						<ul class="pagination">
+							<li class="page-item">
+							  <a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">«</span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+							  <a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">»</span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</div>
+		</section>-->
+		<!-- ====================== End All jobs ============================ -->
+		
+		<!-- ====================== Tag Section ============================ -->
+		<!--<section class="tag-sec" style="background:url(assets/img/slider-01.jpg);">
+			<div class="">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="tag-content">
+						<img src="assets/img/s-logo.png" class="img-responsive" alt="" />
+						<h2>Hello favourite day</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa</p>
+						<a href="#" class="btn theme-btn btn-radius" title="">EXPLORE US<i class="ti-shift-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>-->
+		<!-- =================== End Tag Section ==================== -->
+		
+		<!-- ================ Opening job Section ============================== -->
+		<!--<section>
+			<div class="">
+			
+				<div class="row" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h2>Latest Employers</h2>
+							<p>Each month, more than 7 million Jobhunt turn to website in their search for work, making over<br>160,000 applications every day.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" data-aos="fade-up">
+					<div class="employer-slide">
+					
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-2.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Google Inc</a></h5>
+								<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">5 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-1.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Apple</a></h5>
+								<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">3 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-3.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Core PHP</a></h5>
+								<p class="text-muted">3765 C Street, Worcester</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">4 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-4.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Indiso Ltd</a></h5>
+								<p class="text-muted">2719 Duff Avenue, Winooski</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">5 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-5.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Likvi Soft</a></h5>
+								<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">2 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-6.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Divargo Pvt</a></h5>
+								<p class="text-muted">2865 Emma Street, Lubbock</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">10 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-7.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">MicroSoft Ltd</a></h5>
+								<p class="text-muted">2719 Burnside Avenue, Logan</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">4 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-8.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Sivtrixi Inc</a></h5>
+								<p class="text-muted">3815 Forest Drive, Alexandria</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">5 Open Position</a>
+							</div>
+						</div>
+						
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html.html"><img class="img-responsive" src="assets/img/c-9.png" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html.html">Google Inc</a></h5>
+								<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html.html" class="employer-browse-btn btn-radius br-light">5 Open Position</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</section>-->
+		
+		{% comment %} <footer class="dark-bg footer">
+			<div class="">
+				
+				<!-- Row Start -->
+				<div class="row">
+				
+					<div class="col-md-12 col-sm-12">
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<h4>Need Help?</h4>
+								<ul>
+									<li><a href="#">Member Login</a></li>
+									<li><a href="#">Sign Up</a></li>
+									<li><a href="#">Partner Search</a></li>
+									<li><a href="#">How to Use CM Matrimony</a></li>
+									<li><a href="#">Premium Memberships</a></li>
+									<li><a href="#">Customer Support</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Company</h4>
+								<ul>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">CM Matrimony Blog</a></li>
+									<li><a href="#">Affiliate Program</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Awards & Recognition</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Privacy & You</h4>
+								<ul>
+									<li><a href="#">Terms of Use</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Be Safe Online</a></li>
+									<li><a href="#">Report Misuse</a></li>
+								</ul>
+							</div>
+                            
+                            <div class="col-md-3 col-sm-3">
+								<h4>More</h4>
+								<ul>
+									<li><a href="#">VIP Shaadi</a></li>
+									<li><a href="#">Select Shaadi</a></li>
+									<li><a href="#">Shaadi Centres</a></li>
+									<li><a href="#">Wedding Planning</a></li>
+									<li><a href="#">Success Stories</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+			</div>
+		</footer>
+		
+		<!-- Apply Job Popup -->
+		<div class="modal fade" id="apply-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel2">
+					<div class="modal-body">
+						<div class="text-center">
+							<img src="assets/img/logo.png" class="img-responsive" alt="">
+							<h4 class="mrg-0">Front End Designer</h4>
+							<span> 2708 Scenic Way, Sutter</span>
+						</div>
+						
+						<form>
+
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" class="form-control" placeholder="Email">
+							</div>
+					
+
+							<div class="form-group">
+								<label>Phone</label>
+								<input type="text" class="form-control" placeholder="Phone">
+							</div>
+
+							<div class="form-group">
+								<label>Upload CV</label>
+								<div class="custom-file-upload">
+									<input type="file" id="file" name="myfiles[]" multiple />
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<textarea class="form-control height-120" placeholder="Pase CV"></textarea>
+							</div>
+
+							<div class="form-group text-center">
+								<button type="button" class="btn theme-btn btn-m">Save & Apply</button>
+							</div>
+							
+						</form>
+							
+					</div>
+				</div>
+			</div>
+		</div>   
+		<!-- Apply Job Popup -->
+		
+		<!-- Sign Up Window Code -->
+		<div class="modal fade login_modal" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel1">
+					<div class="modal-body">
+                        
+                     <!--   
+                        <h4>Crazy Mar</h4>-->
+						
+						<ul class="nav nav-tabs nav-advance theme-bg" role="tablist">
+							<li class="nav-item active">
+								<a class="nav-link" data-toggle="tab" href="#employer" role="tab">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#candidate" role="tab">Sign Up</a>
+							</li>
+						</ul>
+							
+						<div class="tab-content">
+						
+							<div class="tab-pane fade in show active" id="employer" role="tabpanel">
+								<form>
+                                    
+                                    <h5>Login with your Email Id</h5>
+									
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control">
+									</div>
+									
+									<div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="4">
+											<label for="4"></label>Remember me
+										</span>
+										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">Sign In </button>
+									</div>
+									
+								</form>
+								
+								<!--<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>-->
+					
+							</div>
+							<!--/.Panel 1-->
+							
+							<!-- Candidate Panel 2-->
+							<div class="tab-pane fade" id="candidate" role="tabpanel">
+								<form>
+                                    
+                                    <h5>Let's set up your account, While <br>we find Matches for you!</h5>
+									
+									<div class="form-group">
+										<label>Enter your email id</label>
+										<input type="text" class="form-control">
+									</div>
+									
+									<div class="form-group">
+										<label>Create a password</label>
+										<input type="password" class="form-control">
+									</div>
+									
+									<div class="form-group">
+									<div class="icon-addon addon-lg">
+                                         <label>Create profile for</label>
+										<select class="wide form-control">
+											<option value="1">Self</option>
+                                            <option value="1">Son</option>
+                                            <option value="1">Daughter</option>
+                                            <option value="1">Brother</option>
+                                            <option value="1">Sister</option>
+                                            <option value="1">Friend</option>
+										</select>
+									</div>
+								</div>
+                                    
+                                    
+                                    
+                                    
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+									</div>
+									
+								</form>
+								
+								<!--<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>-->
+								
+							</div>
+							<!--/.Panel 2-->
+							
+						</div>
+						<!-- Tab panels -->
+					</div>
+				</div>
+			</div>
+		</div>   
+    
+				</section>
+        
+		
+		 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
+		<script src="assets/js/viewportchecker.js"></script>
+		<script src="assets/plugins/slick-slider/slick.js"></script>
+		<script src="assets/plugins/bootstrap/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>
+		
+		<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+    </body>
+
+</html> {% endcomment %}

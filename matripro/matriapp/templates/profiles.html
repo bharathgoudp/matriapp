@@ -1,0 +1,1320 @@
+  {% extends 'headfooter.html' %}
+		{% block content %}
+		{% load static %}
+        
+{% comment %} <html class="no-js" lang="zxx">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
+
+    <title>Crazy Mar - Matrimony</title>
+
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">
+    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="assets/plugins/nice-select/css/nice-select.css">-->
+    <link href="assets/plugins/animate/animate.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
+    
+    <link href="assets/plugins/slick-slider/slick.css" rel="stylesheet">	
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet">
+    <link href="assets/css/skin/default.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+    <style>
+        body, section {
+            background: #f1f1f1;
+        }
+    </style>
+	
+	</head>
+	
+	<body>
+		
+        <header class="main_header">
+				<span class="hoe-sidebar-toggle"><a href="#"></a></span>
+				<div class="cm_left_header">
+					<a href="index.html"><span>Crazy Mar</span></a>
+				</div>
+				<div class="nav_main">
+					<ul class="left-navbar">
+                        
+                        <li>
+							<a href="#">My Profile</a>
+						</li>
+                        
+						<li>
+							<a href="#">SEARCH</a>
+						</li>
+                        
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MATCHES <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">New matche</a></li>
+                            <li><a href="#">Paid Profiles</a></li>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                          </ul>
+                        </li>
+                        
+                        
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Short List Profiles <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Short listed by me</a></li>
+                            <li><a href="#">Short listed my profile</a></li>
+                          </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interst Profiles <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Intersted by me</a></li>
+                            <li><a href="#">Intersted my profile</a></li>
+                          </ul>
+                        </li>
+                        
+                      
+					</ul>
+					<ul class="right-navbar">
+                        <li class="upload_video">
+                            <a href="upload.html"><img src="img/upload.png"></a>
+                        </li>
+						<li>
+							<a class="login" href="#"><img src="img/user.png"> Sign in</a>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle icon-circle" data-toggle="dropdown" >
+							<i class="fa fa-bell-o"></i>
+							<span class="badge badge-success">6</span>
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<h3><span class="bold">Notification</span></h3>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Database overload- Sav3090</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Installing App v1.2.1</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Error - Sav3085</span>
+									<span class="notification-ago  ">10 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status - Sav3080</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Configured</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li> 
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span><img class="img-circle user_img" src="img/avatar-1.jpg"></span>
+								<!--<span><b>Laxman Lucky</b> <i class=" fa fa-angle-down"></i></span>-->
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<div class="profile-box">
+										<div class="media">
+											<a class="pull-left" href="user-profile.html">
+											<img class="img-circle" src="img/avatar-1.jpg">
+											</a>
+											<div class="media-body">
+												<h5 class="media-heading">Welcome <span>Lucky</span></h5>
+												<small>UI Developer</small>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+								<li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+								<li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>
+								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header> {% endcomment %}
+      
+        
+                
+               
+                
+				<section>
+                            
+                           
+                
+                            <section class="list_jobs">
+			<div class="container">
+			
+                
+                <div class="row">
+							<div class="col-sm-7">
+								
+							</div>
+							
+							
+						</div>
+                
+				<div class="row">
+					
+					<div class="col-md-3 col-sm-4">
+                        
+                        <div class="ful_width sidebar_filter">
+					
+						<h5 style="margin: 0;padding: 12px;"> Filter Matches</h5>
+						
+                            
+                            <div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Show Profiles Created<a href="#Profiles_Created" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse-in" id="Profiles_Created">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        
+										<li><a href="#">Within a day (9)</a></li>
+										<li><a href="#">Within a week (45)</a></li>
+										<li><a href="#">Within a month (228)</a></li>
+											
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Age <a href="#experince" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse in" id="experince">
+								<div class="side-list no-border">
+									<div id="Age" style="display: block;"><div class="nopaddmarg facitdot" style=""><!-- --></div><dd style="padding-bottom: 8px;"><div class="paddt8"><select name="MORESTAGE" id="MORESTAGE" style="width:60px;height:30px;" class="optiondiv" size="1"><option value="18">18</option><option value="19">19</option><option value="20" selected="selected">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option></select>&nbsp;&nbsp;to&nbsp;&nbsp;<select name="MOREENDAGE" id="MOREENDAGE" style="width:60px;height:30px;" class="optiondiv" size="1"><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27" selected="selected">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option></select>&nbsp;&nbsp;Yrs&nbsp;&nbsp;
+                                        
+                                        <input type="button" class="submit_btn" value="Submit">
+                                        </div>
+                                        
+                                     
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Height <a href="#designation" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse in" id="designation">
+								<div class="side-list no-border">
+									
+                                  <div class="paddt5" style="padding-bottom: 8px; display: block;"><select name="MORESTHEIGHT1" size="1" class="optiondiv" style="width:79px;height:30px;" id="MORESTHEIGHT1" onchange="setheightnewvalues('MORESTHEIGHT1')"><option value="1">121 cm</option><option value="2">124cm</option><option value="3">127cm</option><option value="4">129cm</option><option value="5">132cm</option><option value="6">134cm</option><option value="7">137cm</option><option value="8">139cm</option><option value="9">142cm</option><option value="10" selected="">144cm</option><option value="11">147cm</option><option value="12">149cm</option><option value="13">152cm</option><option value="14">154cm</option><option value="15">157cm</option><option value="16">160cm</option><option value="17">162cm</option><option value="18">165cm</option><option value="19">167cm</option><option value="20">170cm</option><option value="21">172cm</option><option value="22">175cm</option><option value="23">177cm</option><option value="24">180cm</option><option value="25">182cm</option><option value="26">185cm</option><option value="27">187cm</option><option value="28">190cm</option><option value="29">193cm</option><option value="30">195cm</option><option value="31">198cm</option><option value="32">200cm</option><option value="33">203cm</option><option value="34">205cm</option><option value="35">208cm</option><option value="36">210cm</option><option value="37">213cm</option></select>&nbsp;to&nbsp;<select name="MOREENDHEIGHT1" id="MOREENDHEIGHT1" size="1" class="optiondiv" style="width:79px;height:30px;" onchange="setheightnewvalues('MOREENDHEIGHT1')"><option value="1">121 cm</option><option value="2">124cm</option><option value="3">127cm</option><option value="4">129cm</option><option value="5">132cm</option><option value="6">134cm</option><option value="7">137cm</option><option value="8">139cm</option><option value="9">142cm</option><option value="10">144cm</option><option value="11">147cm</option><option value="12">149cm</option><option value="13">152cm</option><option value="14">154cm</option><option value="15">157cm</option><option value="16">160cm</option><option value="17">162cm</option><option value="18">165cm</option><option value="19">167cm</option><option value="20">170cm</option><option value="21">172cm</option><option value="22" selected="">175cm</option><option value="23">177cm</option><option value="24">180cm</option><option value="25">182cm</option><option value="26">185cm</option><option value="27">187cm</option><option value="28">190cm</option><option value="29">193cm</option><option value="30">195cm</option><option value="31">198cm</option><option value="32">200cm</option><option value="33">203cm</option><option value="34">205cm</option><option value="35">208cm</option><option value="36">210cm</option><option value="37">213cm</option></select>&nbsp;&nbsp;<input type="button" class="submit_btn" value="Submit"></div>
+                                    
+								</div>
+							</div>
+						</div>
+						
+						<div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Marital status <a href="#Marital_status" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse in" id="Marital_status">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        
+										<li><a href="#">Any</a></li>
+										<li><a href="#">Never Married (234)</a></li>
+										<li><a href="#">Divorced (5)</a></li>
+										<li><a href="#">Awaiting divorce (2)</a></li>
+											
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+                            
+                        <div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Mother tongue <a href="#Mother_tongue" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse" id="Mother_tongue">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        
+										<li><a href="#">Any</a></li>
+										<li><a href="#">Tamil</a></li>
+										<li><a href="#">Telugu</a></li>
+											
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+                        <div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Education<a href="#Education" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse" id="Education">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        
+										<li><a href="#">Bachelors - Engineering (108)</a></li>
+										<li><a href="#">Masters - Engineering (53)</a></li>
+										<li><a href="#">Bachelors - Medicine (16)</a></li>
+											
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+                            
+                        <div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Employed in<a href="#Employed" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse" id="Employed">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        
+										<li><a href="#">Any</a></li>
+										<li><a href="#">Private (149)</a></li>
+										<li><a href="#">Self Employed (7)</a></li>
+										<li><a href="#">Government/PSU (5)</a></li>
+										<li><a href="#"> Self Employed (7)</a></li>
+											
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+                            
+                            <div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Occupation<a href="#Occupation" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse" id="Occupation">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Any
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Nurse (1)
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Doctor (5)
+
+                                        </li>
+                                        
+                                        <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Health Care Professional (2)
+
+                                        </li>
+										 
+                                        <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Paramedical Professional (1)
+
+                                        </li><li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Accounts/Finance Professional (2)
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Auditor (1)
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Chartered Accountant (1)
+
+                                        </li>
+                                        
+                                         <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Banking Service Professional (2)
+
+                                        </li><li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Education Professional (1)
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Law Enforcement Officer (1)
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Professor / Lecturer (5)
+
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Manager (4)
+
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Teaching / Academician (4)
+
+                                        </li>
+										<li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Architect (1)
+
+                                        </li>
+										
+										<li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Fashion Designer (1)
+
+                                        </li>
+										
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+                            
+                            <div class="widget-boxed padd-bot-0">
+							<div class="widget-boxed-header br-0">
+								<h5>Annual income<a href="#Annual_income" data-toggle="collapse"><i class="pull-right ti-plus" aria-hidden="true"></i></a></h5>
+							</div>
+							<div class="widget-boxed-body collapse" id="Annual_income">
+								<div class="side-list no-border">
+									<ul id="style-3">
+                                        
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Any
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Not Specified
+
+                                        </li>
+                                        
+                                        <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Less than Rs.50 thousand
+
+                                        </li>
+										 
+                                        <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.50 thousand 
+
+                                        </li><li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.1 Lakh
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.2 Lakh
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.3 Lakh
+
+                                        </li>
+                                        
+                                         <li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.4 Lakh
+
+                                        </li><li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.5 Lakh
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.6 Lakh
+
+                                        </li>
+										<li>
+                                        <span class="custom-checkbox">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                        </span>Rs.7 Lakh
+
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Rs.8 Lakh
+
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Rs.9 Lakh
+
+                                        </li>
+										<li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Rs.10 Lakh
+
+                                        </li>
+										
+										<li>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="1">
+                                                <label for="1"></label>
+                                            </span>Rs.12 Lakh
+
+                                        </li>
+										
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+					
+					<!-- Start Job List -->
+					
+					
+				
+                    </div>
+                    
+                    <div class="no_padding_left col-md-9 col-sm-8">
+						
+						 <!-- <h4 class="searxch_res_h">Your Search Results</h4> -->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="search_for">
+                                    <!-- <span class="cursor"><span style="cursor: pointer;">2022 profiles found :</span> Female, 20 - 25, Hindu, Assamese, Special Cases - No <img src="https://img.shaadi.com/community/search-result/search-for-arrow-d-v2.gif" width="9" height="7" style="margin:0 3px"> -->
+                            
+                            <!-- <div class="search_for_more none"> -->
+                                <!-- <div class="search_detail"> -->
+                                    <!-- <label class="label">Gender</label><div class="info">Female</div> -->
+                                    <!-- <label class="label">Age</label><div class="info">20 - 25</div> -->
+                                    <!-- <label class="label">Special Cases</label> -->
+                                    <!-- <div class="info">No</div> -->
+                                    <!-- <label class="label">Account Type</label> -->
+                                    <!-- <div class="info">Doesn't Matter</div> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- </span> -->
+
+
+
+
+</div>
+                            </div>
+                            
+                            <div class="col-sm-4">
+								
+								<div class="fl-right">
+									<div class="search-wide">
+										<h5>Short By</h5>
+									</div>
+									
+									<div class="search-wide full">
+										<select class="wide form-control sort_by">
+											<option value="1">Most Recent</option>
+											<option value="2">Most Viewed</option>
+											<option value="4">Most Search</option>
+										</select>
+									</div>
+								
+								</div>
+								
+							</div>
+                        </div>
+                       
+				
+						
+                        
+                        
+						<div class="job-verticle-list">
+							<div class="vertical-job-card">
+								
+								<div class="vertical-job-body">
+									<div class="row">
+										<div class="col-md-9 col-sm-8">
+                                            
+											<ul class="can-skils">
+                                                <div class="vrt-job-cmp-logo">
+                                                 <a href="job-detail.html">
+                                                     <span style="margin-top: 8px; display: block;" class="custom-checkbox">
+                                                        <input type="checkbox" id="1">
+                                                        <label for="1"></label>
+                                                     </span>
+                                                </a>
+                                                </div>
+												<li><h5><a href="#">SH15462435</a></h5> 
+                                                    <span style="margin-bottom: 6px;display: block;" class="online_msg">
+                    <span>Profile created by Parent / Guardian</span>
+                    <span class="notification_pipe">Online now, <a href="#">Click to Chat&nbsp;<span title="Chat Now" class="fa fa-comment"></span></a></span>
+                </span>
+                                                </li>
+												
+												
+											</ul>
+                                            
+                                            <div class="row">
+                                                <div class="col-md-4 profile_basic_pic">
+                                                    <div class="user_image">
+                                                        <img src="{% static 'img/01.jpg' %}">
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <div class="profile_basic">
+
+                                                    <label class="label">Age / Height</label><div class="info">21, 5' 0"</div>
+                                                        <div class="clearfix"></div><div class="spacer_4"></div>
+
+
+
+                                                        <label class="label">Religion</label><div class="info">Hindu</div>
+                                                    <div class="clearfix"></div><div class="spacer_4"></div>
+
+                                                    <label class="label">Mother Tongue</label><div class="info">Hindi</div>
+                                                        <div class="clearfix"></div><div class="spacer_4"></div>
+
+                                                                        <label class="label">Community</label><div class="info">Scheduled Caste (SC), chamar</div>
+                                                    <div class="clearfix"></div><div class="spacer_4"></div>
+
+
+
+                                                    <label class="label">Location</label><div class="info">Azamgarh, India</div>
+                                                        <div class="clearfix"></div><div class="spacer_4"></div>
+
+
+                                                                            <label class="label">Education</label><div class="info">Bachelors - Education</div>
+                                                            <div class="clearfix"></div><div class="spacer_4"></div>
+
+                                                        <label class="label">Profession</label><div class="info">Not working</div>
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    
+                                                        <label class="label">Annual Income</label><div class="info">12.00 lakhs</div>
+                                                        <div class="clearfix"></div>
+                                                    
+                                                    <label class="label">Property bid</label><div class="info">12.00 lakhs</div>
+                                                        <div class="clearfix"></div>
+
+                                                    
+                                                </div>
+                                            </div>
+										</div>
+										<!-- <div class="col-md-3 col-sm-4"> -->
+                                            
+                                            <!-- <h4 style="margin-top: 50px;">Like Her Profile?</h4> -->
+											<!-- <div class=""> -->
+												<!-- <a href="#" class="btn-job theme-btn job-apply">Yes, I'm Interested</a> -->
+												
+                                                <!-- <span class="pro_lightblue_btn">Maybe</span> -->
+                                                <!-- <span class="pro_lightblue_btn NoO">No</span> -->
+                                                
+                                                
+											<!-- </div> -->
+										</div>
+									</div>
+								</div>
+								<div class="vertical-job-footer">
+									<div class="row">
+										<div class="col-md-7 col-sm-7">
+											<div style="margin-top: 12px;" class="cmp-job-rating">
+												<p>I have made this profile on behalf of my daughter she is.... More</p>
+											</div>
+										</div>
+                                        <!-- <div class="col-md-2 col-sm-2"><p class="mobile_noO"><span class="fa fa-mobile"></span> <span class="fa fa-comments-o"></span></p></div> -->
+                                        
+										<div class="col-md-3 col-sm-3">
+											<div class="cmp-job-review">
+												<a style="padding: 3px 2px;    min-width: 140px;background: #f28383 !important;" href="#" class="btn-job theme-btn job-apply">View full profile</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        
+                        <!-- <div class="job-verticle-list"> -->
+							<!-- <div class="vertical-job-card"> -->
+								
+								<!-- <div class="vertical-job-body"> -->
+									<!-- <div class="row"> -->
+										<!-- <div class="col-md-9 col-sm-8"> -->
+                                            
+											<!-- <ul class="can-skils"> -->
+                                                <!-- <div class="vrt-job-cmp-logo"> -->
+                                                 <!-- <a href="job-detail.html"> -->
+                                                     <!-- <span style="margin-top: 8px; display: block;" class="custom-checkbox"> -->
+                                                        <!-- <input type="checkbox" id="1"> -->
+                                                        <!-- <label for="1"></label> -->
+                                                     <!-- </span> -->
+                                                <!-- </a> -->
+                                                <!-- </div> -->
+												<!-- <li><h5><a href="#">SH15462435</a></h5>  -->
+                                                    <!-- <span style="margin-bottom: 6px;display: block;" class="online_msg"> -->
+                    <!-- <span>Profile created by Parent / Guardian</span> -->
+                    <!-- <span class="notification_pipe">Online now, <a href="#">Click to Chat&nbsp;<span title="Chat Now" class="fa fa-comment"></span></a></span> -->
+                <!-- </span> -->
+                                                <!-- </li> -->
+												
+												
+											<!-- </ul> -->
+                                            
+                                            <!-- <div class="row"> -->
+                                                <!-- <div class="col-md-4 profile_basic_pic"> -->
+                                                    <!-- <div class="user_image"> -->
+                                                        <!-- <img src="img/01.jpg"> -->
+                                                    <!-- </div> -->
+                                                    
+                                                <!-- </div> -->
+                                                
+                                                <!-- <div class="profile_basic"> -->
+
+                                                    <!-- <label class="label">Age / Height</label><div class="info">21, 5' 0"</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+
+                                                        <!-- <label class="label">Religion</label><div class="info">Hindu</div> -->
+                                                    <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                    <!-- <label class="label">Mother Tongue</label><div class="info">Hindi</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                                        <!-- <label class="label">Community</label><div class="info">Scheduled Caste (SC), chamar</div> -->
+                                                    <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+
+                                                    <!-- <label class="label">Location</label><div class="info">Azamgarh, India</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+                                                                            <!-- <label class="label">Education</label><div class="info">Bachelors - Education</div> -->
+                                                            <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                        <!-- <label class="label">Profession</label><div class="info">Not working</div> -->
+                                                    <!-- <div class="clearfix"></div> -->
+                                                    
+                                                    
+                                                        <!-- <label class="label">Annual Income</label><div class="info">12.00 lakhs</div> -->
+                                                        <!-- <div class="clearfix"></div> -->
+                                                    
+                                                    <!-- <label class="label">Property bid</label><div class="info">12.00 lakhs</div> -->
+                                                        <!-- <div class="clearfix"></div> -->
+
+                                                    
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+										<!-- </div> -->
+										<!-- <div class="col-md-3 col-sm-4"> -->
+                                            
+                                            <!-- <h4 style="margin-top: 50px;">Like Her Profile?</h4> -->
+											<!-- <div class=""> -->
+												<!-- <a href="#" class="btn-job theme-btn job-apply">Yes, I'm Interested</a> -->
+												
+                                                <!-- <span class="pro_lightblue_btn">Maybe</span> -->
+                                                <!-- <span class="pro_lightblue_btn NoO">No</span> -->
+                                             
+											<!-- </div> -->
+                                            
+                                            
+										<!-- </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+								<!-- <div class="vertical-job-footer"> -->
+									<!-- <div class="row"> -->
+										<!-- <div class="col-md-7 col-sm-7"> -->
+											<!-- <div style="margin-top: 12px;" class="cmp-job-rating"> -->
+												<!-- <p>I have made this profile on behalf of my daughter she is.... More</p> -->
+											<!-- </div> -->
+										<!-- </div> -->
+                                        <!-- <div class="col-md-2 col-sm-2"><p class="mobile_noO"><span class="fa fa-mobile"></span> <span class="fa fa-comments-o"></span></p></div> -->
+                                        
+										<!-- <div class="col-md-3 col-sm-3"> -->
+											<!-- <div class="cmp-job-review"> -->
+												<!-- <a style="padding: 3px 2px;    min-width: 140px;background: #f28383 !important;" href="#" class="btn-job theme-btn job-apply">View full profile</a> -->
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+							<!-- </div> -->
+						<!-- </div> -->
+                        
+                        <!-- <div class="job-verticle-list"> -->
+							<!-- <div class="vertical-job-card"> -->
+								
+								<!-- <div class="vertical-job-body"> -->
+									<!-- <div class="row"> -->
+										<!-- <div class="col-md-9 col-sm-8"> -->
+                                            
+											<!-- <ul class="can-skils"> -->
+                                                <!-- <div class="vrt-job-cmp-logo"> -->
+                                                 <!-- <a href="job-detail.html"> -->
+                                                     <!-- <span style="margin-top: 8px; display: block;" class="custom-checkbox"> -->
+                                                        <!-- <input type="checkbox" id="1"> -->
+                                                        <!-- <label for="1"></label> -->
+                                                     <!-- </span> -->
+                                                <!-- </a> -->
+                                                <!-- </div> -->
+												<!-- <li><h5><a href="#">SH15462435</a></h5>  -->
+                                                    <!-- <span style="margin-bottom: 6px;display: block;" class="online_msg"> -->
+                    <!-- <span>Profile created by Parent / Guardian</span> -->
+                    <!-- <span class="notification_pipe">Online now, <a href="#">Click to Chat&nbsp;<span title="Chat Now" class="fa fa-comment"></span></a></span> -->
+                <!-- </span> -->
+                                                <!-- </li> -->
+												
+												
+											<!-- </ul> -->
+                                            
+                                            <!-- <div class="row"> -->
+                                                <!-- <div class="col-md-4 profile_basic_pic"> -->
+                                                    <!-- <div class="user_image"> -->
+                                                        <!-- <img src="img/01.jpg"> -->
+                                                    <!-- </div> -->
+                                                    
+                                                <!-- </div> -->
+                                                
+                                                <!-- <div class="profile_basic"> -->
+
+                                                    <!-- <label class="label">Age / Height</label><div class="info">21, 5' 0"</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+
+                                                        <!-- <label class="label">Religion</label><div class="info">Hindu</div> -->
+                                                    <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                    <!-- <label class="label">Mother Tongue</label><div class="info">Hindi</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                                        <!-- <label class="label">Community</label><div class="info">Scheduled Caste (SC), chamar</div> -->
+                                                    <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+
+                                                    <!-- <label class="label">Location</label><div class="info">Azamgarh, India</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+                                                                            <!-- <label class="label">Education</label><div class="info">Bachelors - Education</div> -->
+                                                            <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                        <!-- <label class="label">Profession</label><div class="info">Not working</div> -->
+                                                    <!-- <div class="clearfix"></div> -->
+                                                    
+                                                    
+                                                        <!-- <label class="label">Annual Income</label><div class="info">12.00 lakhs</div> -->
+                                                        <!-- <div class="clearfix"></div> -->
+                                                    
+                                                    <!-- <label class="label">Property bid</label><div class="info">12.00 lakhs</div> -->
+                                                        <!-- <div class="clearfix"></div> -->
+
+                                                    
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+										<!-- </div> -->
+										<!-- <div class="col-md-3 col-sm-4"> -->
+                                            
+                                            <!-- <h4 style="margin-top: 50px;">Like Her Profile?</h4> -->
+											<!-- <div class=""> -->
+												<!-- <a href="#" class="btn-job theme-btn job-apply">Yes, I'm Interested</a> -->
+												
+                                                <!-- <span class="pro_lightblue_btn">Maybe</span> -->
+                                                <!-- <span class="pro_lightblue_btn NoO">No</span> -->
+                                              
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+								<!-- <div class="vertical-job-footer"> -->
+									<!-- <div class="row"> -->
+										<!-- <div class="col-md-7 col-sm-7"> -->
+											<!-- <div style="margin-top: 12px;" class="cmp-job-rating"> -->
+												<!-- <p>I have made this profile on behalf of my daughter she is.... More</p> -->
+											<!-- </div> -->
+										<!-- </div> -->
+                                        <!-- <div class="col-md-2 col-sm-2"><p class="mobile_noO"><span class="fa fa-mobile"></span> <span class="fa fa-comments-o"></span></p></div> -->
+                                        
+										<!-- <div class="col-md-3 col-sm-3"> -->
+											<!-- <div class="cmp-job-review"> -->
+												<!-- <a style="padding: 3px 2px;    min-width: 140px;background: #f28383 !important;" href="#" class="btn-job theme-btn job-apply">View full profile</a> -->
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+							<!-- </div> -->
+						<!-- </div> -->
+                        
+                        <!-- <div class="job-verticle-list"> -->
+							<!-- <div class="vertical-job-card"> -->
+								
+								<!-- <div class="vertical-job-body"> -->
+									<!-- <div class="row"> -->
+										<!-- <div class="col-md-9 col-sm-8"> -->
+                                            
+											<!-- <ul class="can-skils"> -->
+                                                <!-- <div class="vrt-job-cmp-logo"> -->
+                                                 <!-- <a href="job-detail.html"> -->
+                                                     <!-- <span style="margin-top: 8px; display: block;" class="custom-checkbox"> -->
+                                                        <!-- <input type="checkbox" id="1"> -->
+                                                        <!-- <label for="1"></label> -->
+                                                     <!-- </span> -->
+                                                <!-- </a> -->
+                                                <!-- </div> -->
+												<!-- <li><h5><a href="#">SH15462435</a></h5>  -->
+                                                    <!-- <span style="margin-bottom: 6px;display: block;" class="online_msg"> -->
+                    <!-- <span>Profile created by Parent / Guardian</span> -->
+                    <!-- <span class="notification_pipe">Online now, <a href="#">Click to Chat&nbsp;<span title="Chat Now" class="fa fa-comment"></span></a></span> -->
+                <!-- </span> -->
+                                                <!-- </li> -->
+												
+												
+											<!-- </ul> -->
+                                            
+                                            <!-- <div class="row"> -->
+                                                <!-- <div class="col-md-4 profile_basic_pic"> -->
+                                                    <!-- <div class="user_image"> -->
+                                                        <!-- <img src="img/01.jpg"> -->
+                                                    <!-- </div> -->
+                                                    
+                                                <!-- </div> -->
+                                                
+                                                <!-- <div class="profile_basic"> -->
+
+                                                    <!-- <label class="label">Age / Height</label><div class="info">21, 5' 0"</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+
+                                                        <!-- <label class="label">Religion</label><div class="info">Hindu</div> -->
+                                                    <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                    <!-- <label class="label">Mother Tongue</label><div class="info">Hindi</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                                        <!-- <label class="label">Community</label><div class="info">Scheduled Caste (SC), chamar</div> -->
+                                                    <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+
+                                                    <!-- <label class="label">Location</label><div class="info">Azamgarh, India</div> -->
+                                                        <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+
+                                                                            <!-- <label class="label">Education</label><div class="info">Bachelors - Education</div> -->
+                                                            <!-- <div class="clearfix"></div><div class="spacer_4"></div> -->
+
+                                                        <!-- <label class="label">Profession</label><div class="info">Not working</div> -->
+                                                    <!-- <div class="clearfix"></div> -->
+                                                    
+                                                    
+                                                        <!-- <label class="label">Annual Income</label><div class="info">12.00 lakhs</div> -->
+                                                        <!-- <div class="clearfix"></div> -->
+                                                    
+                                                    <!-- <label class="label">Property bid</label><div class="info">12.00 lakhs</div> -->
+                                                        <!-- <div class="clearfix"></div> -->
+
+                                                    
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+										<!-- </div> -->
+										<!-- <div class="col-md-3 col-sm-4"> -->
+                                            
+                                            <!-- <h4 style="margin-top: 50px;">Like Her Profile?</h4> -->
+											<!-- <div class=""> -->
+												<!-- <a href="#" class="btn-job theme-btn job-apply">Yes, I'm Interested</a> -->
+												
+                                                <!-- <span class="pro_lightblue_btn">Maybe</span> -->
+                                                <!-- <span class="pro_lightblue_btn NoO">No</span> -->
+                                               
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+								<!-- <div class="vertical-job-footer"> -->
+									<!-- <div class="row"> -->
+										<!-- <div class="col-md-7 col-sm-7"> -->
+											<!-- <div style="margin-top: 12px;" class="cmp-job-rating"> -->
+												<!-- <p>I have made this profile on behalf of my daughter she is.... More</p> -->
+											<!-- </div> -->
+										<!-- </div> -->
+                                        <!-- <div class="col-md-2 col-sm-2"><p class="mobile_noO"><span class="fa fa-mobile"></span> <span class="fa fa-comments-o"></span></p></div> -->
+                                        
+										<!-- <div class="col-md-3 col-sm-3"> -->
+											<!-- <div class="cmp-job-review"> -->
+												<!-- <a style="padding: 3px 2px;    min-width: 140px;background: #f28383 !important;" href="#" class="btn-job theme-btn job-apply">View full profile</a> -->
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					
+						
+						<!--
+						<div class="text-center">
+							<button type="button" class="btn theme-btn btn-m">Load More...</button>
+						</div>
+						-->
+					</div>
+                    </div>
+				<!-- End Row -->
+				
+			</div>
+		</section>
+           {% endblock %}                 
+		{% comment %} <footer class="dark-bg footer">
+			<div class="">
+				
+				<!-- Row Start -->
+				<div class="row">
+				
+					<div class="col-md-12 col-sm-12">
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+                            
+                            <div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+			</div>
+		</footer>
+		
+		<!-- Apply Job Popup -->
+		<div class="modal fade" id="apply-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel2">
+					<div class="modal-body">
+						<div class="text-center">
+							<h4 class="mrg-0">Front End Designer</h4>
+							<span> 2708 Scenic Way, Sutter</span>
+						</div>
+						
+						<form>
+
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" class="form-control" placeholder="Email">
+							</div>
+					
+
+							<div class="form-group">
+								<label>Phone</label>
+								<input type="text" class="form-control" placeholder="Phone">
+							</div>
+
+							<div class="form-group">
+								<label>Upload CV</label>
+								<div class="custom-file-upload">
+									<input type="file" id="file" name="myfiles[]" multiple />
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<textarea class="form-control height-120" placeholder="Pase CV"></textarea>
+							</div>
+
+							<div class="form-group text-center">
+								<button type="button" class="btn theme-btn btn-m">Save & Apply</button>
+							</div>
+							
+						</form>
+							
+					</div>
+				</div>
+			</div>
+		</div>   
+		<!-- Apply Job Popup -->
+		
+		<!-- Sign Up Window Code -->
+		<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel1">
+					<div class="modal-body">
+						<div class="text-center"><img src="assets/img/logo.png" class="img-responsive" alt=""></div>
+						
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs nav-advance theme-bg" role="tablist">
+							<li class="nav-item active">
+								<a class="nav-link" data-toggle="tab" href="#employer" role="tab">
+								<i class="ti-user"></i> Employer</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#candidate" role="tab">
+								<i class="ti-user"></i> Candidate</a>
+							</li>
+						</ul>
+						<!-- Nav tabs -->
+							
+						<!-- Tab panels -->
+						<div class="tab-content">
+						
+							<!-- Employer Panel 1-->
+							<div class="tab-pane fade in show active" id="employer" role="tabpanel">
+								<form>
+									
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control" placeholder="User Name">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control" placeholder="*********">
+									</div>
+									
+									<div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="4">
+											<label for="4"></label>Remember me
+										</span>
+										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+									</div>
+									
+								</form>
+								
+								<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>
+					
+							</div>
+							<!--/.Panel 1-->
+							
+							<!-- Candidate Panel 2-->
+							<div class="tab-pane fade" id="candidate" role="tabpanel">
+								<form>
+									
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control" placeholder="User Name">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control" placeholder="*********">
+									</div>
+									
+									<div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="44">
+											<label for="44"></label>Remember me
+										</span>
+										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+									</div>
+									
+								</form>
+								
+								<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>
+								
+							</div>
+							<!--/.Panel 2-->
+							
+						</div>
+						<!-- Tab panels -->
+					</div>
+				</div>
+			</div>
+		</div>   
+    
+				</section>
+        
+		
+		 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
+		<script src="assets/js/viewportchecker.js"></script>
+		<script src="assets/plugins/slick-slider/slick.js"></script>
+		<script src="assets/plugins/bootstrap/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>
+		
+		<!--<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>-->
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/main.js"></script>
+        
+		<script language="javascript" type="text/javascript">
+			 $('ul.left-navbar li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+			</script>
+        
+        
+    </body>
+
+</html> {% endcomment %}

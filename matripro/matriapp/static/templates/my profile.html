@@ -1,0 +1,698 @@
+{% extends 'headfooter.html' %}
+ {% block content %}
+ {% load static %}
+		
+
+{% comment %} <html class="no-js" lang="zxx">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
+
+    <title>Crazy Mar - Job Portal</title>
+
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">
+    <link href="assets/plugins/icons/css/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/plugins/nice-select/css/nice-select.css">
+    <link href="assets/plugins/animate/animate.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
+    
+    <link href="assets/plugins/slick-slider/slick.css" rel="stylesheet">	
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet">
+    <link href="assets/css/skin/default.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	
+    
+    <style>
+        body, section {
+    background: #f1f1f1;
+}
+    </style>
+	</head>
+	
+	<body>
+		
+        <header class="main_header">
+				<span class="hoe-sidebar-toggle"><a href="#"></a></span>
+				<div class="cm_left_header">
+					<a href="index.html"><span>Crazy Mar</span></a>
+				</div>
+				<div class="nav_main">
+					<ul class="left-navbar">
+						<li>
+							<form method="post" class="search_bar">
+								<input type="text" placeholder="Search videos, movies, and more" name="keyword" class="form-control">
+								<span class="search-icon"><i class="fa fa-search"></i></span>
+							</form>
+						</li>
+					</ul>
+					<ul class="right-navbar">
+                        <li class="upload_video">
+                            <a href="upload.html"><img src="img/upload.png"></a>
+                        </li>
+						<li>
+							<a data-toggle="modal" data-target="#signin" class="login" href="#"><img src="img/user.png"> Sign in</a>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle icon-circle" data-toggle="dropdown" >
+							<i class="fa fa-bell-o"></i>
+							<span class="badge badge-success">6</span>
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<h3><span class="bold">Notification</span></h3>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Database overload- Sav3090</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Installing App v1.2.1</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Error - Sav3085</span>
+									<span class="notification-ago  ">10 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status - Sav3080</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Application Configured</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+								<li> 
+									<a href="#" class="clearfix"> 
+									<span class="notification-title">Server Status</span>
+									<span class="notification-ago  ">3 min ago</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown hoe-rheader-submenu message-notification left-min-30">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span><img class="img-circle user_img" src="img/avatar-1.jpg"></span>
+								<!--<span><b>Laxman Lucky</b> <i class=" fa fa-angle-down"></i></span>-->
+							</a>
+							<ul class="dropdown-menu ">
+								<li class="hoe-submenu-label">
+									<div class="profile-box">
+										<div class="media">
+											<a class="pull-left" href="user-profile.html">
+											<img class="img-circle" src="img/avatar-1.jpg">
+											</a>
+											<div class="media-body">
+												<h5 class="media-heading">Welcome <span>Lucky</span></h5>
+												<small>UI Developer</small>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+								<li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+								<li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>
+								<li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header>
+         {% endcomment %}
+         
+        
+                
+                
+                
+                        
+                
+                            <section class="veiw_profile">
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					
+					<div class="col-md-9 col-sm-9">
+						
+                        <div class="view_profile">
+                            
+                        
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-body">
+							
+								
+								
+								<div class="row">
+                                    
+                                    <div class="col-md-4">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{% static 'img/p1.png' %}">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/p2.png' %}">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/p3.png' %}">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/p4.png' %}">
+                </div>
+                
+            </div>
+        </div> 
+    <div class="clearfix">
+        <div id="thumbcarousel" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static 'img/psmall1.png' %}"></div>
+                    <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static 'img/psmall2.png' %}"></div>
+                    <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static 'img/psmall3.png' %}"></div>
+                    <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static 'img/psmall4.png' %}"></div>
+                </div>
+                
+            </div>
+           
+        </div> 
+    </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="col-md-7">
+                                        
+                                        <div class="name_profile">
+                                            <p>
+                                                <span class="name_user">M. Lathamani</span> 
+                                                <span class="profile_id">(T45DFSD64)</span>
+                                            
+                                            </p>
+                                            <p class="last_online">Last Online 1 day ago.</p>
+                                        </div>
+                                        
+                                        <ul class="user_detials_pr">
+                                            <li><i class="fa fa-user" aria-hidden="true"></i> 28 Yrs, 5Ft 8 In/173 Cms</li>
+                                            <li><i class="fa fa-book" aria-hidden="true"></i> Hindu</li>
+                                            <li><i class="fa fa-users" aria-hidden="true"></i> Kshatriya Raju</li>
+                                        
+                                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Secunderabad,	Telangana, India</li>
+                                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> B.Arch</li>
+                                            <li><i class="fa fa-briefcase" aria-hidden="true"></i> Architect</li>
+                                            <li><i class="fa fa-inr" aria-hidden="true"></i> Rs. 12.00 lakhs</li>
+                                            
+                                            <li><a class="send_email" href="#">49 Pay</a></li>
+                                        </ul>
+                                        
+                
+                                        
+                                    </div>
+									<!--<div class="col-sm-4 mrg-bot-10">
+										<span>25 Yrs, 5 Ft 8 In / 173 Cms</span>
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<span>Hindu</span>
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<span>Kshatriya Raju</span>
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<span>Rajus</span>
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<span>Secunderabad,	Telangana, India</span>
+									</div>
+                                    <div class="col-sm-4 mrg-bot-10">
+										<span>B.Arch</span>
+									</div>
+                                    <div class="col-sm-4 mrg-bot-10">
+										<span>Architect</span>
+									</div>
+                                    <div class="col-sm-4 mrg-bot-10">
+										<span>Rs. 12.00 lakhs</span>
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<span class="skill-tag">css</span>
+										<span class="skill-tag">HTML</span>
+										<span class="skill-tag">Photoshop</span>
+									</div>
+								</div>-->
+								
+							</div>
+						</div>
+						
+						<div class="detail-wrapper info_user_a">
+							<div class="detail-wrapper-header">
+								<h3>Personal Information</h3>
+							</div>
+                            
+                        
+							<div class="detail-wrapper-body">
+                                
+							</div>
+                            
+                            <div class="detail-wrapper-header">
+								<h4>Basic Details</h4>
+							</div>
+							<div class="detail-wrapper-body BASIC_DETAILS">
+								<div class="row">
+                                    <div class="col-md-6">
+                                        <p><span>Name</span> <span>: &nbsp;V Padmavathy Alias V</span></p>
+                                        <p><span>Age</span> <span>: &nbsp;25 Yrs</span></p>
+                                        <p><span>Height</span> <span>: &nbsp;5 Ft 8 In / 173 Cms</span></p>
+                                        <p><span>Weight</span> <span>: &nbsp;63 Kgs / 139 lbs</span></p>
+                                        <p><span>Mother Tongue</span> <span>: &nbsp;Telugu</span></p>
+                                        <p><span>Marital Status</span> <span>: &nbsp;Never married</span></p>
+                                    </div>    
+                                    
+                                    <div class="col-md-6">
+                                        <p><span>Body Type</span> <span>: &nbsp;Average</span></p>
+                                        <p><span>Complexion</span> <span>: &nbsp;Wheatish</span></p>
+                                        <p><span>Physical Status</span> <span>: &nbsp;Normal</span></p>
+                                        <p><span>Eating Habits</span> <span>: &nbsp;Non Vegetarian</span></p>
+                                        <p><span>Drinking Habits</span> <span>: &nbsp;Never drinks</span></p>
+                                        <p><span>Smoking Habits</span> <span>: &nbsp;Never smokes</span></p>
+                                    </div> 
+                                    
+                                </div>
+							</div>
+                            
+                            
+                            <div class="detail-wrapper-header">
+								<h4>Contact Details</h4>
+							</div>
+							<div class="detail-wrapper-body BASIC_DETAILS">
+								<div class="row">
+                                    <div class="col-md-6">
+                                        <p><span>Contact Number</span> <span>: &nbsp;9988634534</span></p>
+                                        <p><span>Parent Contact</span> <span>: &nbsp;Not Available</span></p>
+                                        <p><span>Chat Status</span> <span>: &nbsp;Offline</span></p>
+                                        <p><span>Send Mail</span> <span>: &nbsp;test@gmail.com</span></p>
+                                    </div>    
+                                    
+                                </div>
+							</div>
+                            
+                            <div class="detail-wrapper-header">
+								<h4>Religion Information</h4>
+							</div>
+							<div class="detail-wrapper-body BASIC_DETAILS">
+								<div class="row">
+                                    <div class="col-md-6">
+                                        <p><span>Religion</span> <span>: &nbsp;Hindu</span></p>
+                                        <p><span>Caste / Sub Caste</span> <span>: &nbsp;Kshatriya Raju / Rajus</span></p>
+                                        <p><span>Gothram</span> <span>: &nbsp;KASHYAPA</span></p>
+                                        <p><span>Zodiac</span> <span>: &nbsp;Aquarius</span></p>
+                                        <p><span>Star / Raasi</span> <span>: &nbsp;Chitha / Kanya (Virgo)</span></p>
+                                        <p><span>Dosham</span> <span>: &nbsp;Don't know</span></p>
+                                    </div>    
+                                    
+                                </div>
+							</div>
+                            
+                            <div class="detail-wrapper-header">
+								<h4>Location</h4>
+							</div>
+							<div class="detail-wrapper-body BASIC_DETAILS">
+								<div class="row">
+                                    <div class="col-md-6">
+                                        <p><span>Country</span> <span>: &nbsp;India</span></p>
+                                        <p><span>State</span> <span>: &nbsp;Telangana</span></p>
+                                    </div>  
+                                    
+                                    <div class="col-md-6">
+                                        <p><span>Citizenship</span> <span>: &nbsp;India</span></p>
+                                        <p><span>City</span> <span>: &nbsp;Secunderabad</span></p>
+                                    </div>   
+                                    
+                                </div>
+							</div>
+                            
+                            <div class="detail-wrapper-header">
+								<h4>Professional Information</h4>
+							</div>
+							<div class="detail-wrapper-body BASIC_DETAILS">
+								<div class="row">
+                                    <div class="col-md-12">
+                                        <p><span>Education</span> <span>: &nbsp;B.Arch</span></p>
+                                        <p><span>College / Institution</span> <span>: &nbsp;Jawaharlal Nehru Technological University (JNTU) - College...</span></p>
+                                        <p><span>Education in Detail</span> <span>: &nbsp;architect and interior designer</span></p>
+                                        <p><span>Employed in</span> <span>: &nbsp;Private Sector</span></p>
+                                        <p><span>Occupation</span> <span>: &nbsp;Architect</span></p>
+                                        <p><span>Occupation in Detail</span> <span>: &nbsp;working for a leading architect firm and also free lance</span></p>
+                                        <p><span>Annual Income</span> <span>: &nbsp;Rs. 12.00 lakhs</span></p>
+                                    </div>  
+                                    
+                                </div>
+							</div>
+                            
+                            <div class="detail-wrapper-header">
+								<h4>Family Details</h4>
+							</div>
+							<div class="detail-wrapper-body BASIC_DETAILS">
+								<div class="row">
+                                    <div class="col-md-6">
+                                        <p><span>Family Values</span> <span>: &nbsp;Moderate</span></p>
+                                        <p><span>Family Type</span> <span>: &nbsp;Nuclear</span></p>
+                                        <p><span>Family Status</span> <span>: &nbsp;Upper middle class</span></p>
+                                        <p><span>Family Location</span> <span>: &nbsp;Secunderabad, Telangana</span></p>
+                                    </div>  
+                                    
+                                    <div class="col-md-6">
+                                        <p><span>No of Brother(s)</span> <span>: &nbsp;1 / Not Married</span></p>
+                                        <p><span>No of Sister(s)</span> <span>: &nbsp;None</span></p>
+                                        <p><span>Mother's Status</span> <span>: &nbsp;Homemaker</span></p>
+                                    </div>   
+                                    
+                                </div>
+							</div>
+                            
+                    
+							<div class="detail-wrapper-body">
+                                
+							</div>
+                            
+						</div>
+				
+					</div>
+					
+					<!-- Sidebar -->
+					
+						
+					</div>
+                    
+				</div>
+				<div class="col-md-3 col-sm-3">
+						<div class="sidebar">
+						
+							<div class="widget-boxed side_bar_prof">
+								<div class="widget-boxed-header">
+									<h4>horoscope Matching</h4>
+                                    
+                                    <div class="progress yellow">
+                                        <span class="progress-left">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <div class="progress-value">75%</div>
+                                    </div>
+                                    
+                                    <a class="edit_your_profile" href="#">Edit your profile</a>
+                                    
+								</div>
+                                
+                                
+								
+							</div>
+                            
+                            
+                            <div style="padding: 0;" class="widget-boxed side_bar_prof">
+								<img src="{% static 'img/add.jpg' %}">
+							</div>
+                            <div class="widget-boxed side_bar_prof">
+								<div class="widget-boxed-header">
+									<h4>Members who viewed this profile also viewed</h4>
+								</div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/avatar-2.jpg' %}">
+                                    </div>
+                                    <div class="col-md-8" style="padding-left: 0">
+                                        <a href="#">T4009173</a>
+                                        <P>My Daughter Ms V.Padmavathy Alias Varsha, Is A Graduate In</P>
+                                        <a href="#">View Full Profile</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/avatar-2.jpg' %}">
+                                    </div>
+                                    <div class="col-md-8" style="padding-left: 0">
+                                        <a href="#">T4009173</a>
+                                        <P>My Daughter Ms V.Padmavathy Alias Varsha, Is A Graduate In</P>
+                                        <a href="#">View Full Profile</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/avatar-2.jpg' %}">
+                                    </div>
+                                    <div class="col-md-8" style="padding-left: 0">
+                                        <a href="#">T4009173</a>
+                                        <P>My Daughter Ms V.Padmavathy Alias Varsha, Is A Graduate In</P>
+                                        <a href="#">View Full Profile</a>
+                                    </div>
+                                </div>
+                                 
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'img/avatar-2.jpg' %}">
+                                    </div>
+                                    <div class="col-md-8" style="padding-left: 0">
+                                        <a href="#">T4009173</a>
+                                        <P>My Daughter Ms V.Padmavathy Alias Varsha, Is A Graduate In</P>
+                                        <a href="#">View Full Profile</a>
+                                    </div>
+                                </div>
+								
+							</div>
+						
+							</div> 
+						</div>
+                </div>
+			
+			</div>
+		</section>
+		{% endblock %}
+                            
+		{% comment %} <footer class="dark-bg footer">
+			<div class="">
+				
+				<!-- Row Start -->
+				<div class="row">
+				
+					<div class="col-md-12 col-sm-12">
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+                            
+                            <div class="col-md-3 col-sm-3">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+			</div>
+		</footer>
+		
+		<div class="modal fade login_modal" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" id="myModalLabel1">
+					<div class="modal-body">
+                        
+                     <!--   
+                        <h4>Crazy Mar</h4>-->
+						
+						<ul class="nav nav-tabs nav-advance theme-bg" role="tablist">
+							<li class="nav-item active">
+								<a class="nav-link" data-toggle="tab" href="#employer" role="tab">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#candidate" role="tab">Sign Up</a>
+							</li>
+						</ul>
+							
+						<div class="tab-content">
+						
+							<div class="tab-pane fade in show active" id="employer" role="tabpanel">
+								<form>
+                                    
+                                    <h5>Login with your Email Id</h5>
+									
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control">
+									</div>
+									
+									<div class="form-group">
+										<span class="custom-checkbox">
+											<input type="checkbox" id="4">
+											<label for="4"></label>Remember me
+										</span>
+										<a href="#" title="Forget" class="fl-right">Forgot Password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">Sign In </button>
+									</div>
+									
+								</form>
+								
+								<!--<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>-->
+					
+							</div>
+							<!--/.Panel 1-->
+							
+							<!-- Candidate Panel 2-->
+							<div class="tab-pane fade" id="candidate" role="tabpanel">
+								<form>
+                                    
+                                    <h5>Let's set up your account, While <br>we find Matches for you!</h5>
+									
+									<div class="form-group">
+										<label>Enter your email id</label>
+										<input type="text" class="form-control">
+									</div>
+									
+									<div class="form-group">
+										<label>Create a password</label>
+										<input type="password" class="form-control">
+									</div>
+									
+									<div class="form-group">
+									<div class="icon-addon addon-lg">
+                                         <label>Create profile for</label>
+										<select class="wide form-control">
+											<option value="1">Self</option>
+                                            <option value="1">Son</option>
+                                            <option value="1">Daughter</option>
+                                            <option value="1">Brother</option>
+                                            <option value="1">Sister</option>
+                                            <option value="1">Friend</option>
+										</select>
+									</div>
+								</div>
+                                    
+                                    
+                                    
+                                    
+									<div class="form-group text-center">
+										<button type="button" class="btn theme-btn full-width btn-m">LogIn </button>
+									</div>
+									
+								</form>
+								
+								<!--<div class="log-option"><span>OR</span></div>
+								
+								<div class="row mrg-bot-20">
+									<div class="col-md-6">
+										<a href="#" title="" class="fb-log-btn log-btn"><i class="fa fa-facebook"></i>Sign In With Facebook</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" title="" class="gplus-log-btn log-btn"><i class="fa fa-google-plus"></i>Sign In With Google+</a>
+									</div>
+								</div>-->
+								
+							</div>
+							<!--/.Panel 2-->
+							
+						</div>
+						<!-- Tab panels -->
+					</div>
+				</div>
+			</div>
+		</div>   
+    
+	
+    
+				</section>
+        
+		
+		 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
+		<script src="assets/js/viewportchecker.js"></script>
+		<script src="assets/plugins/slick-slider/slick.js"></script>
+		<script src="assets/plugins/bootstrap/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap-wysihtml5.js"></script>
+		
+		<script src="assets/plugins/nice-select/js/jquery.nice-select.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/main.js"></script>
+        
+		<script language="javascript" type="text/javascript">
+			 if($('#search_for_more').height()>235){
+
+					$("#search_for_more .search_detail").css({'height':235+"px", 'overflow':'auto'});
+			  }
+			</script>
+    </body>
+
+</html> {% endcomment %}
