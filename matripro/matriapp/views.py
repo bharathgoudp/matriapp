@@ -36,7 +36,8 @@ def search(request):
 @login_required
 def step1(request):
     if request.method == "POST":
-        form = Step1_Form(request.POST)
+        form = Step1_Form(request.POST or {})
+        
         if form.is_valid():
             matri_obj = form.save()
             matri_obj.user = request.user
@@ -52,7 +53,7 @@ def step1(request):
 def step2(request,matri_uuid):
     matri_obj = get_object_or_404(Matrimonydata, uuid=matri_uuid)
     if request.method == "POST":
-        form = Step2_Form (request.POST, instance=matri_obj)
+        form = Step2_Form (request.POST or {}, instance=matri_obj)
         if form.is_valid():
             matri_obj = form.save()
             return redirect('step3', matri_uuid=matri_obj.uuid)
@@ -67,7 +68,7 @@ def step2(request,matri_uuid):
 def step3(request,matri_uuid):
     matri_obj = get_object_or_404(Matrimonydata, uuid=matri_uuid)
     if request.method == "POST":
-        form = Step3_Form (request.POST, instance=matri_obj)
+        form = Step3_Form (request.POST or {}, instance=matri_obj)
         if form.is_valid():
             matri_obj = form.save()
             return redirect('step4', matri_uuid=matri_obj.uuid)
@@ -76,16 +77,16 @@ def step3(request,matri_uuid):
             return render(request, 'step3.html', {'form': form})    
     else:
         form = Step3_Form(instance=matri_obj)
-    return render(request,"step3.html.html",{'form':form,'viewtab':'step3','slug':None,'matri_obj':matri_obj})
+    return render(request,"step3.html",{'form':form,'viewtab':'step3','slug':None,'matri_obj':matri_obj})
 
 
 def step4(request,matri_uuid):
     matri_obj = get_object_or_404(Matrimonydata, uuid=matri_uuid)
     if request.method == "POST":
-        form = Step4_Form (request.POST, instance=matri_obj)
+        form = Step4_Form (request.POST or {}, instance=matri_obj)
         if form.is_valid():
             matri_obj = form.save()
-            return redirect('myhome', matri_uuid=matri_obj.uuid)
+            return redirect('myhome')
         else:
             form = Step4_Form()
             return render(request, 'step4.html', {'form': form})    
